@@ -11,15 +11,19 @@ var ROOMID = 'xxxxxxxxxxxxxxxxxxxxxxxx';
 
 var bot = new Bot(AUTH, USERID);
 
-/* ===== Debugging ===== */
+// Debugging
 var debug = false;
 
 
+
 /* ======= Public Chat [speak] Event ======= */
+
 bot.on('speak', function(data) {
 	// [Debugging] Log to console
 	if (debug = true) { console.log('Someone said something.'); }
 });
+
+
 
 /* ===== Private Message [pmmed] Event ===== */
 
