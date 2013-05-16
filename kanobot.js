@@ -1,3 +1,18 @@
-## A New Post
+/*
+	Name: KanoBot
+    Author: Afreekano (Marcello Africano)
+    Version: 1.0
+*/
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+var Bot    = require('ttapi');
+var AUTH   = 'xxxxxxxxxxxxxxxxxxxxxxxx';
+var USERID = 'xxxxxxxxxxxxxxxxxxxxxxxx';
+var ROOMID = 'xxxxxxxxxxxxxxxxxxxxxxxx';
+
+var bot = new Bot(AUTH, USERID)
+
+// When the bot recieves a message, tell the console to say that he has.
+bot.on('pmmed', function(data) {
+  // Log to console.
+  console.log('The bot has recieved a message.');
+});
