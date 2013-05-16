@@ -18,12 +18,7 @@ var debug = false;
 /* ======= Public Chat [speak] Event ======= */
 bot.on('speak', function(data) {
 	// [Debugging] Log to console
-	if (debug = true) {
-		console.log('Someone said something.');
-	}
-	else {
-		
-	}
+	if (debug = true) { console.log('Someone said something.'); }
 });
 
 /* ===== Private Message [pmmed] Event ===== */
@@ -31,10 +26,5 @@ bot.on('speak', function(data) {
 // When the bot recieves a message, tell the console to say that he has.
 bot.on('pmmed', function(data) {
 	// [Debugging] Log to console.
-	if (debug = true) {
-		console.log('The bot has recieved a message.');
-	}
-	else {
-		
-	}
+	if (debug = true) { console.log('The bot has recieved a message.'); }
 });
